@@ -1,0 +1,191 @@
+/* Global CSS */
+body{
+  background-color: "DAA06D";
+  margin: 0;
+  font-family: "DM Serif Display", "Koh Santepheap", "Francois One";
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0;
+
+}
+
+:root{
+  --primary:blue;
+  --heading--color: green;
+  --bg--shade: nude;
+  --github: purple;
+  --darkgreen: green;
+  --black: #000000;
+  --white: #ffffff;
+
+}
+
+.btn{
+  font-family: "DM Serif Display";
+  padding: 10px 32px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: blanchedalmond;
+  border-color: whitesmoke;
+
+}
+
+.btn-outline-primary{
+  color: beige;
+  background-color: blue;
+  border: 1px solid ;
+}
+.btn-outline-primary:hover{
+  color: white;
+  background-color: beige;
+}
+.btn-primary{
+  color: darkgoldenrod;
+  background-color: navajowhite;
+  border: 1px solid ;
+}
+.btn-primary:hover{
+  color: navajowhite;
+  background-color: darkgoldenrod;
+}
+.btn-github{
+  color:white;
+  background-color: var(--github);
+  border: var(--github);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.95);
+  gap:16px;
+
+}
+
+.btn-github:hover{
+  color: var(--github);
+  background-color: var(--white);
+}
+
+/*Global CSS Ends Here*/
+
+/* Main Headings */
+ 
+/*Heading 1*/
+h1{
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 67px;
+}
+h2{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+h3{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+/* Paragraph Texts */
+.text-lg{
+  color: var(--darkgreen);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.text-md{
+  color: var(--darkgreen);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text-sm{
+  color: var(--darkgreen);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/*Section Titles */
+/* Skills & About Me */
+.section--title{
+  color: var(--heading--color);
+  font-size: 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Resume, Contact Me, Projects */
+.sub--title{
+  color: var(--heading--color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* Hero Section */
+.hero--section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 133.333px 85.333px 133.333px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  background-color: var(--bg--shade);
+}
+
+.hero--section--content--box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.333 px;
+
+}
+
+.hero--section--content--box > button{
+  margin-top: 21.333px;
+}
+
+.hero--section--title{
+  color: black;
+  font-weight: 700;
+}
+
+.hero--section--title--color{
+  color: brown;
+
+}
+
+.hero--section--description{
+  color: chocolate;
+  
+}
