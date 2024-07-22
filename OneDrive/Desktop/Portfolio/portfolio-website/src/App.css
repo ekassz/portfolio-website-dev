@@ -1,9 +1,11 @@
 /* Global CSS */
 body{
-  background-color: "DAA06D";
   margin: 0;
   font-family: "DM Serif Display", "Koh Santepheap", "Francois One";
   font-style: normal;
+  background-image: url('./Pages/Images/BackgroundLayout.png');
+  background-size: cover;
+  background-position: center center;
 }
 
 h1,
@@ -84,7 +86,25 @@ p{
   color: var(--github);
   background-color: var(--white);
 }
-
+/*setting in the top right corner*/
+.navbar{
+  position: absolute;
+  top: 0;
+  right: 5%;;
+  margin: 20px;
+}
+/* displaying it horizontally nav*/
+.nav-list{
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+/*changing the color of nav text */
+.nav-item a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
 /*Global CSS Ends Here*/
 
 /* Main Headings */
@@ -113,6 +133,8 @@ h3{
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  top: 0;
+  left: 0;
 }
 
 .text-md{
@@ -121,6 +143,7 @@ h3{
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  top: 0;
 }
 
 .text-sm{
@@ -129,6 +152,11 @@ h3{
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  top: 0;
+}
+
+.highlighted-SWE-text{
+  color: brown;
 }
 
 /*Section Titles */
@@ -142,6 +170,8 @@ h3{
   line-height: 32px;
   display: flex;
   align-items: flex-start;
+  top: 0;
+  left: 0;
 }
 
 /* Resume, Contact Me, Projects */
@@ -161,6 +191,12 @@ h3{
   justify-content: space-between;
   gap: 32px;
   background-color: var(--bg--shade);
+}
+
+.hero--section--header{
+  position: absolute;
+  top: 30px;
+  left: 80px;
 }
 
 .hero--section--content--box{
