@@ -92,6 +92,7 @@ p{
   top: 0;
   right: 5%;;
   margin: 20px;
+  z-index: 10;
 }
 /* displaying it horizontally nav*/
 .nav-list{
@@ -128,9 +129,9 @@ h3{
 
 /* Paragraph Texts */
 .text-lg{
-  color: var(--darkgreen);
-  font-size: 18px;
-  font-style: normal;
+  color: black;
+  font-size: 22px;
+  font-style:normal;
   font-weight: 400;
   line-height: 27px;
   top: 0;
@@ -199,6 +200,12 @@ h3{
   left: 80px;
 }
 
+.containerRight{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
 .hero--section--content--box{
   display: flex;
   flex-direction: column;
@@ -218,10 +225,31 @@ h3{
 
 .hero--section--title--color{
   color: brown;
+  font-size:xx-large;
 
 }
 
 .hero--section--description{
   color: chocolate;
   
+}
+
+.rightBoxContent{
+  
+  margin-top: 70px;
+  margin-left: 300px;
+  padding: 20px;
+}
+
+.leftBoxContent{
+  margin-top: 100px;
+  margin-right: 70px;
+  width: 0;
+  height: 80px;
+}
+
+.leftBoxContent img{
+  width: 400px;
+  border-radius: 10px;
+  margin-left: -40px;
 }
