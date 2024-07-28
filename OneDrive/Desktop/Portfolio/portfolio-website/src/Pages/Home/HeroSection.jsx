@@ -1,17 +1,26 @@
 import ReactRoundedImage from "react-rounded-image";
-//import myPhoto from "./Portfolio/portfolio-website/public/profile.jpg"
+import profile from '../Images/profile.jpg';
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
+import ContactMe from "./ContactMe";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
+    const navigate = useNavigate();
+
+    const handleContactMe = () =>{
+        navigate("/contactme");
+    };
+
     return(
         <section id="heroSection" className="hero--section">
             <nav className="navbar">
                 <ul className="nav-list">
-                    <li className="nav-item"><a href="/home">HOME</a></li>
-                    <li className="nav-item"><a href="/aboutme">ABOUT ME</a></li>
-                    <li className="nav-item"><a href="/resume">RESUME</a></li>
-                    <li className="nav-item"><a href="/projects">PROJECTS</a></li>
-                    <li className="nav-item"><a href="/contact">CONTACT</a></li>
+                    <li className="nav-item"><Link to="/home">HOME</Link></li>
+                    <li className="nav-item"><Link to="/aboutme">ABOUT ME</Link></li>
+                    <li className="nav-item"><Link to="/resume">RESUME</Link></li>
+                    <li className="nav-item"><Link to="/projects">PROJECTS</Link></li>
+                    <li className="nav-item"><Link to="/contactme">CONTACT</Link></li>
                 </ul>
             </nav>
             <div className="hero--section--header">
@@ -30,10 +39,11 @@ export default function HeroSection() {
                         I am a rising senior at the University of Wisconsin-Madison studying Computer Science & Data Science, with minors in Digital Studies and Leadership. 
                     </p>
                 </div>
-                <button className="btn btn-primary">Get in Touch</button>
+                <button className="btn btn-primary" onClick={handleContactMe}>Get in Touch</button>
             </div>
             <div className="hero--section--img">
-                <ReactRoundedImage image="./profile.jpg" 
+                <ReactRoundedImage 
+                image= {profile} 
                 roundedSize ="17"
                 roundedColor = "#F9E8C8"
                 hoverColor = "#DAAF5B"
