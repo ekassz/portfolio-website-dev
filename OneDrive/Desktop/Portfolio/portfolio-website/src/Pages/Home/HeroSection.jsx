@@ -4,6 +4,7 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import ContactMe from "./ContactMe";
 import { useNavigate } from "react-router-dom";
+import ContactBox from "../../Components/ContactBox";
 
 export default function HeroSection() {
     const navigate = useNavigate();
@@ -14,22 +15,13 @@ export default function HeroSection() {
 
     return(
         <section id="heroSection" className="hero--section">
-            <nav className="navbar">
-                <ul className="nav-list">
-                    <li className="nav-item"><Link to="/home">HOME</Link></li>
-                    <li className="nav-item"><Link to="/aboutme">ABOUT ME</Link></li>
-                    <li className="nav-item"><Link to="/resume">RESUME</Link></li>
-                    <li className="nav-item"><Link to="/projects">PROJECTS</Link></li>
-                    <li className="nav-item"><Link to="/contactme">CONTACT</Link></li>
-                </ul>
-            </nav>
-            <div className="hero--section--header">
-                <h2 className="section--title">Hello! Hola!</h2>
-                </div>
-                    <div className="hero--section--content--box">
-                        <div className="hero--section--content">
+            
+            <div className="hero--section--content">
+                <div className="hero--section--content--box">
                             <h1 className="hero--section--title">
                         <span className="hero--section--title-color">
+                           <span className="hello-highlight-text">Hello! Hola!</span>
+                            <br/>
                             I'm Emili,
                         </span>
                         <br/>
@@ -38,7 +30,7 @@ export default function HeroSection() {
                     <p className="hero--section--description">
                         I am a rising senior at the University of Wisconsin-Madison studying Computer Science & Data Science, with minors in Digital Studies and Leadership. 
                     </p>
-                </div>
+                
                 <button className="btn btn-primary" onClick={handleContactMe}>Get in Touch</button>
             </div>
             <div className="hero--section--img">
@@ -47,12 +39,14 @@ export default function HeroSection() {
                 roundedSize ="17"
                 roundedColor = "#F9E8C8"
                 hoverColor = "#DAAF5B"
-                imageHeight="500"
-                imageWidth="500"
+                imageHeight="800"
+                imageWidth="800"
+                
                 />
-                
-                
-
+            </div>
+            </div>
+            <div className="contact-box-container">
+                <ContactBox/>
             </div>
         </section>
     )
