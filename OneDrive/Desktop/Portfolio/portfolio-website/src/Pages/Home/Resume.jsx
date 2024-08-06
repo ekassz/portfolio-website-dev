@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Techstack from "../../Components/TechStack/Techstack";
 
 export default function Resume(){
      return(
@@ -13,6 +14,7 @@ export default function Resume(){
                 </div>
             </div>
         </div>
+        <Techstack/>
      </section>
     )
 }

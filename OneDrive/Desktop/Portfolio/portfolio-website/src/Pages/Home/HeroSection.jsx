@@ -3,6 +3,7 @@ import profile from '../Images/profile.jpg';
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import ContactMe from "./ContactMe";
+import Techstack from "../../Components/TechStack/Techstack";
 import { useNavigate } from "react-router-dom";
 import ContactBox from "../../Components/ContactBox";
 
@@ -45,6 +46,7 @@ export default function HeroSection() {
                 />
             </div>
             </div>
+            <Techstack/>
             <div className="contact-box-container">
                 <ContactBox/>
             </div>
