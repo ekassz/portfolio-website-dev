@@ -7,7 +7,7 @@ import {Form, Col, Row, Container, Pagination, Button} from 'react-bootstrap';
 export default function AboutMe(){
     return(
      <section id="aboutme" className="hero--section">
-        <div className="hero--section--header">
+        <div>
             <div className="containerRight">
                 <div className="leftBoxContent">
                     <img src={uwImg} alt="uwImage"/>

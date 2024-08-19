@@ -26,6 +26,9 @@ export default function Techstack() {
                 <Icon icon="simple-icons:testrail" width="120" height="120" />
                 <Icon icon="devicon:npm-wordmark" width="120" height="120" />
                 <Icon icon="devicon:kotlin" width="120" height="120" />
+                <Icon icon="devicon:vscode" width="120" height="120"/>
+                <Icon icon="devicon:androidstudio" width="120" height="120"/>
+                <Icon icon="logos:xcode" width="120" height="120"/>
             </div>
         </div>
     );
