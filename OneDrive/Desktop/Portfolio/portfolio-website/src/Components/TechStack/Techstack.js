@@ -4,29 +4,42 @@ import javaIcon from '@iconify/icons-logos/java';
 import pythonIcon from '@iconify/icons-logos/python';
 import figmaIcon from '@iconify/icons-logos/figma';
 import "./Techstack.css";
-// Add more as needed
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+
+const icons = [
+    { icon:javaIcon,width:"120" ,height:"120"},
+    {icon:pythonIcon, width:"120" ,height:"120"},
+    {icon:reactIcon,width:"120" ,height:"120"},
+    {icon:figmaIcon, width:"120" ,height:"120"},
+    { icon: "devicon:rstudio", width: 120, height: 120 },
+    { icon: "logos:git", width: 150, height: 100 },
+    {icon:"skill-icons:javascript" ,width:"120", height:"120"},
+    {icon:"devicon:postman", width:"120", height:"120"},
+    {icon:"devicon:linux", width:"120", height:"120"},
+    {icon:"vscode-icons:file-type-css", width:"120" ,height:"120"},
+    {icon:"vscode-icons:file-type-html", width:"120", height:"120"},
+    {icon:"logos:jenkins", width:"120", height:"120"},
+    {icon:"simple-icons:testrail", width:"120" ,height:"120"},
+    {icon:"devicon:npm-wordmark", width:"120" ,height:"120"},
+    {icon:"devicon:kotlin", width:"120" ,height:"120"},
+    {icon:"devicon:vscode" ,width:"120", height:"120"},
+    {icon:"devicon:androidstudio", width:"120", height:"120"},
+    {icon:"logos:xcode" ,width:"120" ,height:"120"}
+];
 
 export default function Techstack() {
     return (
-        <div className="tech-stack">
+        <Container className="tech-stack">
             <h2>Tech Stack</h2>
-            <div className="icons">
-                <Icon icon={javaIcon} width="120" height="120" />
-                <Icon icon={pythonIcon} width="120" height="120" />
-                <Icon icon={reactIcon} width="120" height="120" />
-                <Icon icon={figmaIcon} width="120" height="120" />
-                <Icon icon="devicon:rstudio" width="120" height="120" />
-                <Icon icon="logos:git" width="150" height="100" />
-                <Icon icon="skill-icons:javascript" width="120" height="120" />
-                <Icon icon="devicon:postman" width="120" height="120" />
-                <Icon icon="devicon:linux" width="120" height="120" />
-                <Icon icon="vscode-icons:file-type-css" width="120" height="120" />
-                <Icon icon="vscode-icons:file-type-html" width="120" height="120" />
-                <Icon icon="logos:jenkins" width="120" height="120" />
-                <Icon icon="simple-icons:testrail" width="120" height="120" />
-                <Icon icon="devicon:npm-wordmark" width="120" height="120" />
-                <Icon icon="devicon:kotlin" width="120" height="120" />
-            </div>
-        </div>
+            <Row className="icons">
+                {icons.map((item, index) => (
+                    <Col xs={4} md={3} lg={2} key={index}>
+                        <Icon icon={item.icon} width={item.width} height={item.height} />
+                        </Col>
+                ))}
+            
+            </Row>
+        </Container>
     );
 }
