@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 // styled heading / section heading
 export const SectionTitle = styled.h1`
+  color:brown;
   font-weight: 600;
   position: relative;
   display: inline-block;

@@ -4,18 +4,19 @@ import { motion } from 'framer-motion';
 import React, { useContext } from 'react';
 
 
+
 const data = [
   {
     id: 1,
     company: 'Starbucks',
-    role: 'Software Engineering Intern',
+    role: 'Software Engineer Intern',
     fromDate: new Date('2024-06-11'),
     toDate: new Date('2024-08-16'),
     tasks: [
       'Automated the process of updating test case results for QEs in TestRail',
-      'Worked within the Android mobile codebase and merged 6 pull requests for my automation tool',
-      'Collaborated with lead Android SDET and iOS engineer to successfully use TestRail documentation to send results with the API',
-      'With my automation in place, feature testing gets completed faster by up to 50% and is in the process of being generated for regression testing',
+      'Merge 6 pull requests to the Starbucks android US mobile mevelopment repo',
+      'Performed weekly refinements and standups with the lead android engineer and swe 2 on my team',
+      'Focused on feature testing, with plans to implement into regression testing',
     ],
   },
   {
@@ -138,7 +139,10 @@ const TimeLine = styled.ul`
 `;
 
 const TimeLineItem = styled.li`
-  padding: 0 0 2em 2em;
+  background-color: rgba(241, 236, 213, 0.753);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius:8px;
   border-left: 1px solid var(--accent-blue);
   position: relative;
   &::after {
@@ -170,7 +174,7 @@ const ExperieceHeader = styled.div`
   top: -10px;
 
   h3 {
-    font-weight: 400;
+    font-weight: 600;
   }
 
   small {
@@ -190,3 +194,4 @@ const TaskList = styled.ul`
     color: var(--para-gray-color);
   }
 `;
+

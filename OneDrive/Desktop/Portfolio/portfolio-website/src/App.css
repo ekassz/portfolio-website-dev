@@ -246,7 +246,7 @@ h3{
 .hero--section--title{
   color: black;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 2.5rem;
 }
 
 .hero--section--title--color{
@@ -257,7 +257,7 @@ h3{
 
 .hero--section--description{
   color: darkred;
-  font-size: 25px;
+  font-size: 1.2rem;
   
 }
 
@@ -300,6 +300,13 @@ h3{
 .hero--section--img img {
   max-width: 100%; /* Ensure the image fits within its container */
   height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  border: 5px solid navajowhite;
+  transition: border-color 0.3s ease;
+}
+
+.hero--section--img img:hover{
+  border-color: brown;
 }
 
 /* Footer */
@@ -371,6 +378,8 @@ h3{
   .social-icons {
     padding: 10px 0;
   }
+
+  
 }
 @media (min-width: 1366px) {
  .rightBoxContent {
@@ -413,6 +422,51 @@ h3{
   .text-lg{
     font-size: 0.8rem;
   }
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .hero--section--title {
+        font-size: 3rem;
+    }
+
+    .hero--section--description {
+        font-size: 1.3rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .hero--section--title {
+        font-size: 3.5rem;
+    }
+
+    .hero--section--description {
+        font-size: 1.4rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hero--section--title {
+        font-size: 4rem;
+    }
+
+    .hero--section--description {
+        font-size: 1.5rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .hero--section--title {
+        font-size: 4.5rem;
+    }
+
+    .hero--section--description {
+        font-size: 1.6rem;
+    }
 }
 
 /* Contact Box */
