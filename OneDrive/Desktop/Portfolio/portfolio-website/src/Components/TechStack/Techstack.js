@@ -34,7 +34,7 @@ export default function Techstack() {
             <h2>Tech Stack</h2>
             <Row className="icons">
                 {icons.map((item, index) => (
-                    <Col xs={4} md={3} lg={2} key={index}>
+                    <Col xs={4} md={3} lg={2} xl={1} key={index}>
                         <Icon icon={item.icon} width={item.width} height={item.height} />
                         </Col>
                 ))}

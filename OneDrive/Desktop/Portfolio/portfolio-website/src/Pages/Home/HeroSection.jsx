@@ -5,6 +5,8 @@ import {Col, Row, Container} from 'react-bootstrap';
 import Techstack from "../../Components/TechStack/Techstack";
 import { useNavigate } from "react-router-dom";
 import ContactBox from "../../Components/ContactBox";
+import ProjectCards from "../../Components/ProjectsCards/ProjectCards";
+import TechnicalBG from "../../Components/Experience/TechnicalBG";
 
 export default function HeroSection() {
     const navigate = useNavigate();
@@ -47,7 +49,11 @@ export default function HeroSection() {
                         </div>
                     </Col>
                 </Row>
+                <br/>
+                <br/>
+                <TechnicalBG/>
                 <Techstack />
+                <ProjectCards/>
                 <div className="contact-box-container">
                     <ContactBox />
                 </div>

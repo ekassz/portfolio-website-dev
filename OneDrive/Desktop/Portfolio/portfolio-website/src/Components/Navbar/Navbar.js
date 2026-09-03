@@ -66,7 +66,7 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={NavLink} to="/aboutme" onClick={() => setExpand(false)} activeClassName="active-link">
-                About Me
+                About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
